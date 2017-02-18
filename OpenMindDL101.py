@@ -30,3 +30,5 @@ for i in range(0,10):
             maxpair = pair
     del counters[maxpair]
     print "%s %d" % (maxpair, maxcount)
+
+f.close()
