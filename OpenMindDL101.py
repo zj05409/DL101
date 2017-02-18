@@ -15,7 +15,6 @@ f = open(filename)
 for line in f.readlines():
     line = re.sub(chinesepuncreg, "", line.decode("utf8"))
     prev = ''
-    #wordReg = re.compile("\w+", re.UNICODE)
     for word in line.split():
         if prev:
             pair = "%s %s" % (prev, word)
